@@ -32,7 +32,7 @@ class _SportPageState extends State<SportPage> {
     setState(() {
       _isLoaded = false;
     });
-    print(news);
+    // print(news);
   }
 
   @override

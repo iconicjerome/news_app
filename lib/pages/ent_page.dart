@@ -30,7 +30,7 @@ class _EntPageState extends State<EntPage> {
     setState(() {
       _isLoaded = false;
     });
-    print(news);
+    // print(news);
   }
 
   @override

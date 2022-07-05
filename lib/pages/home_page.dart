@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   //we want a list from the model GetNews
 
   List<GetNews>? news;
+  // var isDark;
 
   //create tag to check if the api response has loaded or not
   var _isLoaded = true;
@@ -34,18 +35,21 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _isLoaded = false;
     });
-    print(news);
+    // print(news);
   }
+
+  // getDark() async {
+  //   SharedPreferences pref = await SharedPreferences.getInstance();
+  //   setState(() {
+  //     isDark = pref.get('darktheme') ;
+  //   });
+
+  //   // return isDark;
+  // }
 
   // setDark() async {
   //   SharedPreferences pref = await SharedPreferences.getInstance();
   //   pref.setBool('darktheme', true);
-  // }
-
-  // getDark() async {
-  //   SharedPreferences pref = await SharedPreferences.getInstance();
-  //   bool isDark = pref.getBool('darktheme') ?? false;
-  //   return isDark;
   // }
 
   @override
